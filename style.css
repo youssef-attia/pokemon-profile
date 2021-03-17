@@ -1,0 +1,220 @@
+header{
+    text-align: center;
+    font-size: 25px;
+    padding:20px;
+}
+.pokemon{
+    background-color: #ffa;
+    text-align: center;
+    font-size: 20px;
+    color: #495159;
+    font-weight: bold;
+    padding: 20px 5px;
+    border: 10px solid white;
+}
+#pokelist{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.pokeDiv{
+    min-width: 200px;
+    width: 18vw;
+    height: 40vh;
+    text-align: center;
+    margin: 10px;
+    background-color: rgb(202, 224, 228);
+    border: rgb(47, 87, 114) solid 10px;
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+    transition-duration: .5s;
+ }
+ h4{
+   font-size: 2vw;
+ }
+/*
+.fire{
+    background-color: rgb(209, 156, 156);
+}
+.sfire{
+    border: rgb(128, 57, 57) solid 10px;
+}
+.flying{
+    background-color: rgb(202, 224, 228);
+}
+.poison{
+    background-color: rgb(180, 218, 196);
+}
+.spoison{
+    border: rgb(22, 172, 84) solid 10px;
+}
+.sgrass{
+    border: rgb(58, 124, 86) solid 10px;
+}
+.water{
+    background-color: rgb(92, 187, 204);
+}
+.snormal{
+    border: rgb(124, 84, 58) solid 10px;
+}
+.normal{
+    background-color: rgb(175, 157, 133);
+}
+.grass{
+    background-color: rgb(186, 221, 176);
+}
+.sbug{
+    border: rgb(99, 109, 55) solid 10px;
+} */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #3D589D;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFCC00;
+  font-weight: 900;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: rgb(27, 47, 97);
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.login-form{
+    border-left: grey 1px solid;
+    margin-left: 50px;
+    padding-left: 50px;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+i{
+  font-size: 30px !important;
+  color: rgb(156, 72, 72);
+}
+.fa-heart-o:hover{
+  transform: scale(1.2);
+  transition-duration: .1s;
+}
+.fa-heart:hover{
+  transform: scale(.8);
+  transition-duration: .1s;
+}
+.fa-chevron-down{
+  color: rgb(77, 74, 74);
+  margin: 20px;
+}
+.fa-chevron-down:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: .1s;
+}
+/* spinner */
+.spinner {
+  position: absolute;
+  left: 32.5%;
+
+  height:500px;
+  width:500px;
+  margin:0px auto;
+  -webkit-animation: rotation .6s infinite linear;
+  -moz-animation: rotation .6s infinite linear;
+  -o-animation: rotation .6s infinite linear;
+  animation: rotation .6s infinite linear;
+  border-left:6px solid rgba(0,174,239,.15);
+  border-right:6px solid rgba(0,174,239,.15);
+  border-bottom:6px solid rgba(0,174,239,.15);
+  border-top:6px solid rgba(0,174,239,.8);
+  border-radius:100%;
+}
+
+@-webkit-keyframes rotation {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes rotation {
+  from {-moz-transform: rotate(0deg);}
+  to {-moz-transform: rotate(359deg);}
+}
+@-o-keyframes rotation {
+  from {-o-transform: rotate(0deg);}
+  to {-o-transform: rotate(359deg);}
+}
+@keyframes rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(359deg);}
+}
